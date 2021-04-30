@@ -1,0 +1,32 @@
+.logo {
+	width: 100%;
+	height: 100px;
+	border: solid black 1px;
+}
+
+h1 {
+	text-align: center;
+}
+
+nav {
+	width: 100%;
+	height: 100px;
+	border: solid black 1px;
+}
+
+ul {
+	display: inline-block;
+}
+
+.navigation__menu {
+	text-decoration: none;
+}
+
+.navigation__menu--item {
+	text-decoration: none;
+}
+
+li a {
+	text-decoration: none;
+	display: block;
+}
