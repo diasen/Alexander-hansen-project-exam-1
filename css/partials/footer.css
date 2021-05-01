@@ -1,0 +1,77 @@
+.main__footer {
+	width: 100%;
+	height: 300px;
+	background-color: #4d1325;
+	display: flex;
+	text-align: center;
+}
+
+.subscribe__container,
+.social__container {
+	width: 50%;
+}
+
+h5 a {
+	color: white;
+	font-family: var(--ff-logo);
+	font-size: 3rem;
+	letter-spacing: 1px;
+	padding-top: 50px;
+	text-decoration: none;
+}
+
+h5 {
+	margin-top: 60px;
+}
+
+.subscribe__container p {
+	color: white;
+	font-family: var(--ff-subhead);
+	font-size: 1.2rem;
+	font-weight: lighter;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 10px auto 0 auto;
+}
+
+.email__input {
+	height: 40px;
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+
+.subscribe__btn {
+	background-color: var(--btn-color);
+	color: white;
+	height: 40px;
+	width: 150px;
+	margin: 10px auto 0 auto;
+	border: none;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.social__container h5 {
+	font-size: 2rem;
+	font-family: var(--ff-header);
+	color: white;
+}
+
+.social__container i {
+	color: white;
+	font-size: 3rem;
+	margin: 20px;
+}
+
+.copyright__container {
+	text-align: center;
+}
+
+.copyright__container p {
+	text-align: center;
+	padding: 40px;
+}

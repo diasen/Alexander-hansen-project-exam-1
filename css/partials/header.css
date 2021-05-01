@@ -3,7 +3,7 @@
 	text-align: center;
 }
 
-h1 a {
+.logo a {
 	color: var(--main-color);
 	font-family: var(--ff-logo);
 	font-size: 4.5rem;
