@@ -8,7 +8,7 @@
 	color: var(--main-color);
 	font-family: var(--ff-logo);
 	font-size: 4.5rem;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	padding: 20px;
 	text-decoration: none;
 }
