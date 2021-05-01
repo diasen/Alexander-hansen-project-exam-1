@@ -36,7 +36,7 @@ h5 {
 	font-weight: lighter;
 }
 
-form {
+.subscribe__form {
 	display: flex;
 	flex-direction: column;
 	width: 50%;

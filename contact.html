@@ -41,7 +41,29 @@
 				</ul>
 			</nav>
 		</header>
-		<main></main>
+		<main>
+			<div class="contact__bg--container">
+				<form class="contact__form">
+					<h1>Get in touch with me!</h1>
+					<label for="name">Your full name</label>
+					<input type="text" name="name" id="name" />
+					<p class="error nameError">Please enter your name</p>
+
+					<label for="email">Your email</label>
+					<input type="text" name="email" id="email" />
+					<p class="error emailError">Please enter a valid email (must contain @ sign)</p>
+
+					<label for="subject">Subject</label>
+					<input type="text" name="text" id="text" />
+					<p class="error passwordErrorOne">Please enter a valid password (min 8 characters)</p>
+
+					<label for="password">Please confirm your password</label>
+					<input type="password" name="password" id="passwordTwo" />
+					<p class="error passwordErrorTwo">Passwords does not match</p>
+
+					<button id="submit" ">Submit Information</button>
+			</div>
+		</main>
 		<footer>
 			<div class="main__footer">
 				<div class="subscribe__container">
