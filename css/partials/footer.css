@@ -6,9 +6,14 @@
 	text-align: center;
 }
 
-.subscribe__container,
+.subscribe__container {
+	width: 40%;
+	margin-left: auto;
+}
+
 .social__container {
-	width: 50%;
+	width: 40%;
+	margin-right: auto;
 }
 
 h5 a {
@@ -52,13 +57,14 @@ form {
 	margin: 10px auto 0 auto;
 	border: none;
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 
 .social__container h5 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-family: var(--ff-header);
 	color: white;
+	margin-top: 70px;
 }
 
 .social__container i {
@@ -74,4 +80,5 @@ form {
 .copyright__container p {
 	text-align: center;
 	padding: 40px;
+	background-color: var(--bg-color);
 }
