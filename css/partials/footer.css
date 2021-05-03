@@ -51,13 +51,15 @@ h5 {
 
 .subscribe__btn {
 	background-color: var(--btn-color);
+	font-family: var(--ff-subhead);
 	color: white;
-	height: 40px;
-	width: 150px;
+	height: 60px;
+	width: 180px;
 	margin: 10px auto 0 auto;
 	border: none;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 1.3rem;
+	border-radius: 5px;
 }
 
 .social__container h5 {
