@@ -1,7 +1,7 @@
 .contact__bg--container {
 	height: 650px;
 	width: 70%;
-	margin: 100px auto 0 auto;
+	margin: 100px auto 100px auto;
 	background-image: url(/img/contact.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
