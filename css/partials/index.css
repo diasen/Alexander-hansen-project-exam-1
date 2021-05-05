@@ -1,1 +1,158 @@
+h1 {
+	margin: 80px 0 40px 0;
+	text-align: center;
+	font-family: var(--ff-header);
+	color: var(--main-color);
+	font-size: 2.5rem;
+	font-weight: normal;
+}
 
+.introduction__container {
+	display: flex;
+	height: 400px;
+	width: 60%;
+	margin: 0 auto 100px auto;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.introduction__container--text {
+	width: 50%;
+	background-color: #f6f2f2;
+}
+
+.introduction__container--img {
+	width: 50%;
+}
+
+.main__person--img {
+	width: 100%;
+	height: 100%;
+}
+
+.main__textfield {
+	width: 80%;
+	height: 80%;
+	margin: 40px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.main__text {
+	font-size: 1.4rem;
+	font-family: var(--ff-text);
+}
+
+.review__container {
+	width: 70%;
+	margin: 100px auto 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.wine__review--container {
+	height: 500px;
+	min-width: 350px;
+	background-image: url(/img/winereview2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.food__review--container {
+	height: 500px;
+	min-width: 350px;
+	background-image: url(/img/foodreview.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.restaurant__review--container {
+	height: 500px;
+	min-width: 350px;
+	background-image: url(/img/restaurantreview.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.review__textfield {
+	color: white;
+	text-align: center;
+	width: 70%;
+	margin: 400px auto 0 auto;
+	line-height: 1.1;
+}
+
+.review__textfield h3 {
+	font-size: var(--fz-subheading);
+	font-family: var(--ff-subhead);
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.review__textfield p {
+	font-size: 1.5rem;
+	font-weight: lighter;
+}
+
+.blog__review--container {
+	height: 450px;
+	width: 70%;
+	margin: 100px auto 100px auto;
+	display: flex;
+}
+
+.blog__review--img {
+	width: 65%;
+}
+
+.blog__img {
+	height: 100%;
+	width: 100%;
+}
+
+.blog__review--textfield {
+	width: 35%;
+	background-color: #f6f2f2;
+}
+
+.blog__review--text {
+	text-align: center;
+	border: 1px solid black;
+	width: 100%;
+	margin-top: 90px;
+}
+
+.blog__review--text h4 {
+	font-size: var(--fz-subheading);
+	font-family: var(--ff-subhead);
+	font-weight: normal;
+}
+
+.blog__review--text p {
+	font-size: var(--ff-text);
+	font-family: var(--ff-text);
+	font-weight: bolder;
+}
+
+.review__btn {
+	width: 300px;
+}

@@ -53,7 +53,7 @@ input[type='text'] {
 }
 
 .textbox {
-	width: 60%;
+	max-width: 60%;
 	height: 120px;
 	outline: none;
 	border-radius: 5px;
