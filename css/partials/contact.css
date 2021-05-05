@@ -75,7 +75,7 @@ p {
 	margin: 0px;
 }
 
-button {
+.submit__btn {
 	background-color: var(--btn-color);
 	width: 50%;
 	height: 60px;
