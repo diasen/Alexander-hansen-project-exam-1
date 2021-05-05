@@ -96,6 +96,7 @@ p {
 	margin: 0;
 	font-size: 1.5rem;
 	font-family: var(--ff-subhead);
+	color: var(--main-color);
 }
 
 .dog__description,
@@ -127,4 +128,5 @@ p {
 	margin: 0;
 	font-size: 1.5rem;
 	font-family: var(--ff-subhead);
+	color: var(--main-color);
 }
