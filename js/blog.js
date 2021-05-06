@@ -13,6 +13,7 @@ async function getPosts() {
 				<img class="organizationImg" src="${value.better_featured_image.media_details.sizes.medium_large.source_url}" alt="">
                 <h2>${value.title.rendered}</h2>
 				<p>${value.excerpt.rendered}</p>
+                <a href="blogdetails.html?id=${value.id}">More info</a>
 				<button id="pickBtn" class="pick_cause_btn" onclick="changeBtn()">View article</button>
             </div>
         `;

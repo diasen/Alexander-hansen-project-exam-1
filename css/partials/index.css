@@ -52,6 +52,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .wine__review--container {
@@ -179,4 +180,12 @@
 	height: 400px;
 	margin: 0 auto 100px auto;
 	border: 1px solid black;
+}
+
+.carosuel__header {
+	font-size: var(--fz-subheading);
+	font-family: var(--ff-header);
+	font-weight: normal;
+	text-align: center;
+	color: var(--main-color);
 }
