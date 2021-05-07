@@ -10,7 +10,7 @@ async function getBlog() {
 	try {
 		console.log(getId);
 		const response = await fetch(
-			'http://api.alexdevelops.online/wp-json/wp/v2/posts/' + getId
+			'https://api.alexdevelops.online/wp-json/wp/v2/posts/' + getId
 		);
 		const jsonResults = await response.json();
 		console.log(jsonResults.title.rendered);
