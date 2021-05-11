@@ -16,10 +16,6 @@
 	align-items: center;
 }
 
-#more {
-	display: none;
-}
-
 .card {
 	width: 400px;
 	border-radius: 5px;
