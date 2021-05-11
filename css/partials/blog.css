@@ -1,19 +1,26 @@
 .blog__container {
-	width: 80%;
+	width: 85%;
 	margin: 100px auto 100px auto;
-	border: 1px solid black;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
-.heading_causes {
-	color: var(--main-color);
-	margin-top: 30px;
+.blog__two--container {
+	width: 85%;
+	margin: 0 auto 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
+
+#more {
+	display: none;
+}
+
 .card {
-	height: 600px;
 	width: 400px;
 	border-radius: 5px;
 	margin: 15px 15px 15px 15px;
@@ -25,14 +32,6 @@
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	position: relative;
-}
-
-.card h2 {
-	font-family: Roboto, 'Open Sans', sans-serif;
-	font-weight: bold;
-	text-align: center;
-	color: var(--main-color);
 }
 
 .card img {
@@ -43,94 +42,19 @@
 	border-radius: 5px 5px 0 0;
 }
 
+.card h2 {
+	font-family: Roboto, 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: var(--main-color);
+}
+
 .card p {
 	font-family: 'Rubik', sans-serif;
 	font-size: 1.1rem;
-	position: absolute;
 	bottom: 120px;
 	width: 100%;
 	padding: 20px;
-}
-
-.pick_cause_btn {
-	background-color: var(--main-color);
-	color: white;
-	width: 200px;
-	height: 50px;
-	font-size: 1.2rem;
-	border-radius: 5px;
-	position: absolute;
-	bottom: 30px;
-	left: 100px;
-}
-
-.causes {
-	width: 1300px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-
-.donating_container {
-	width: 1000px;
-	background-color: white;
-	border-radius: 5px;
-	margin: 70px 0 70px 0;
-	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-		0 100px 80px rgba(0, 0, 0, 0.12);
-}
-
-.amount_container,
-.timeperiod_container {
-	display: inline-block;
-	font-size: 1.2rem;
-	font-family: 'Rubik', sans-serif;
-}
-
-.timeperiod_container input[type='text'] {
-	width: 20%;
-	height: 30px;
-	margin: 10px;
-}
-
-.amount_container input[type='text'] {
-	width: 20%;
-	height: 30px;
-	margin: 10px;
-}
-
-.timeperiod h1 {
-	font-size: 1.5rem;
-	color: var(--main-color);
-	margin: 0;
-	text-align: center;
-	font-family: 'Rubik', sans-serif;
-}
-
-.timeperiod {
-	text-align: left;
-}
-
-.amount h2 {
-	text-align: center;
-	font-family: 'Rubik', sans-serif;
-}
-
-label {
-	display: inline-block;
-}
-
-.donate_btn_container {
-	text-align: center;
-}
-
-.donate_btn {
-	margin: 50px;
-	text-align: center;
-	width: 250px;
-	height: 50px;
 }
 
 .loading {
@@ -140,14 +64,24 @@ label {
 	position: relative;
 }
 
-.loadinggif {
-	margin: auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.alert {
+	display: none;
 }
 
 .nav a.active {
 	border-bottom: 3px solid var(--main-color);
+}
+
+.viewblog__btn {
+	text-decoration: none;
+	background-color: var(--main-color);
+	font-family: var(--ff-subhead);
+	color: white;
+	border: none;
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	width: 50%;
+	margin: 0 auto 30px auto;
 }
