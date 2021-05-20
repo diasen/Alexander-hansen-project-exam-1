@@ -1,7 +1,7 @@
 async function getPosts() {
 	try {
 		const response = await fetch(
-			'https://noroffcors.herokuapp.com/http://api.alexdevelops.online/wp-json/wp/v2/posts?page=1'
+			'https://noroffcors.herokuapp.com/http://api.alexdevelops.online/wp-json/wp/v2/posts?'
 		);
 		const jsonResults = await response.json();
 		const blogArray = jsonResults;
@@ -18,6 +18,7 @@ async function getPosts() {
         `;
 		});
 	} catch (error) {
+		console.log(error);
 		document.querySelector('.alert').innerHTML += showAlertTouser(
 			'An error occured',
 			'danger'
@@ -59,3 +60,19 @@ async function getNew() {
 }
 
 getNew();
+
+function myFunction() {
+	const show = document.getElementById('show__more');
+	const morePosts = document.getElementById('more');
+	const viewBtn = document.getElementById('view__btn');
+
+	if (show.style.display === 'none') {
+		show.style.display = 'inline';
+		viewBtn.innerHTML = 'View more posts';
+		morePosts.style.display = 'none';
+	} else {
+		show.style.display = 'none';
+		viewBtn.innerHTML = 'View less posts';
+		morePosts.style.display = 'inline';
+	}
+}
