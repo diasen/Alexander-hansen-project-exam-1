@@ -9,46 +9,35 @@
 
 .introduction__container {
 	display: flex;
-	height: 400px;
-	width: 60%;
-	margin: 0 auto 100px auto;
-	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-		0 100px 80px rgba(0, 0, 0, 0.12);
-}
-
-.introduction__container--text {
-	width: 50%;
-	background-color: #f6f2f2;
-}
-
-.introduction__container--img {
-	width: 50%;
-}
-
-.main__person--img {
-	width: 100%;
-	height: 100%;
-}
-
-.main__textfield {
-	width: 80%;
-	height: 80%;
-	margin: 40px auto;
-	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
+	width: 60%;
+	margin: 0 auto 0 auto;
+}
+
+.introduction__img {
+	margin: auto auto;
+}
+
+.profile__img {
+	width: 350px;
+	height: 350px;
+	border-radius: 100%;
+	margin-bottom: 30px;
 }
 
 .main__text {
-	font-size: 1.4rem;
+	padding: 10px;
+	text-align: center;
+	font-size: 22px;
 	font-family: var(--ff-text);
+	color: var(--main-color);
+	font-weight: bold;
 }
 
 .review__container {
 	width: 70%;
-	margin: 100px auto 100px auto;
+	margin: 100px auto 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -56,8 +45,8 @@
 }
 
 .wine__review--container {
-	height: 500px;
-	min-width: 350px;
+	height: 400px;
+	min-width: 300px;
 	background-image: url(/img/winereview2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -69,8 +58,8 @@
 }
 
 .food__review--container {
-	height: 500px;
-	min-width: 350px;
+	height: 400px;
+	min-width: 300px;
 	background-image: url(/img/foodreview.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -82,8 +71,8 @@
 }
 
 .restaurant__review--container {
-	height: 500px;
-	min-width: 350px;
+	height: 400px;
+	min-width: 300px;
 	background-image: url(/img/restaurantreview.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -98,7 +87,7 @@
 	color: white;
 	text-align: center;
 	width: 70%;
-	margin: 400px auto 0 auto;
+	margin: 330px auto 0 auto;
 	line-height: 1.1;
 }
 
@@ -168,6 +157,11 @@
 	border-radius: 5px;
 	border: none;
 	color: white;
+}
+
+.review__btn a {
+	color: white;
+	text-decoration: none;
 }
 
 .review__bold {
