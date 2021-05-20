@@ -1,92 +1,60 @@
-.contact__bg--container {
-	height: 750px;
-	width: 70%;
-	margin: 80px auto 100px auto;
-	background-image: url(/img/contact.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.contact__form {
-	background-color: #ffff;
-	border-radius: 7px;
-	width: 35%;
-	margin: 80px auto;
+.form_div {
+	background-color: #f6f2f2;
+	padding: 50px;
+	width: 500px;
+	border-radius: 5px;
+	margin: 100px auto;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
 		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
 		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
 		0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.contact__form h1 {
+form h1 {
 	text-align: center;
 	color: var(--main-color);
-	font-size: 1.5rem;
-	padding: 40px 0 20px 0;
-	font-size: 2rem;
-	font-family: var(--ff-header);
-	font-weight: normal;
+	margin: 20px 0 40px 0;
 }
 
-.form_div {
-	background-color: #ffff;
-	padding: 20px;
-	width: 700px;
-	display: flex;
-	justify-content: space-evenly;
-	border-radius: 5px;
-	margin-top: 70px;
-	margin-bottom: 100px;
-	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-		0 100px 80px rgba(0, 0, 0, 0.12);
+.form_div p {
+	margin-top: 2px;
 }
 
 input[type='text'] {
-	width: 60%;
+	width: 100%;
 	height: 30px;
+	border: solid 1px rgb(82, 81, 81);
 	outline: none;
 	border-radius: 5px;
-	margin: 0 0 0 75px;
-}
-
-.textbox {
-	max-width: 60%;
-	height: 120px;
-	outline: none;
-	border-radius: 5px;
-	margin: 0 0 0 75px;
-	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-		0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 label {
-	margin: 10px 0 5px 75px;
+	margin: 20px 0 3px 0;
 	display: block;
 	font-family: var(--ff-text);
+	font-weight: bold;
+}
+
+button {
+	margin-top: 30px;
+	background-color: var(--main-color);
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+	border: none;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.textbox {
+	width: 100%;
+	border-radius: 5px;
 }
 
 p {
 	padding: 0px;
 	margin: 0px;
-}
-
-.submit__btn {
-	background-color: var(--main-color);
-	width: 50%;
-	height: 60px;
-	padding: 10px;
-	border: none;
-	color: white;
-	border-radius: 5px;
-	font-size: 1.2rem;
-	font-weight: bold;
-	margin: 30px 0 40px 95px;
-	font-family: var(--ff-subhead);
-	font-weight: normal;
 }
 
 .error {
@@ -100,4 +68,13 @@ p {
 
 .show {
 	display: block;
+}
+
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
 }

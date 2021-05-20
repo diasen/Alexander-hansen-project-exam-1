@@ -42,26 +42,21 @@
 			</nav>
 		</header>
 		<main>
-			<div class="contact__bg--container">
-				<form class="contact__form">
+			<div class="form_div">
+				<form>
 					<h1>Get in touch with me!</h1>
-
 					<label for="name">Your full name</label>
 					<input type="text" name="name" id="name" />
-					<p class="error nameError">
-						Please enter your name (min 6 characters)
-					</p>
+					<p class="error nameError">(Should be more than 5 characters long)</p>
 
 					<label for="email">Your email</label>
 					<input type="text" name="email" id="email" />
-					<p class="error emailError">
-						Please enter a valid email (must contain @ sign)
-					</p>
+					<p class="error emailError">(Must contain @ sign)</p>
 
 					<label for="subject">Subject</label>
-					<input type="text" name="text" id="text" />
+					<input type="text" name="text" id="subject" />
 					<p class="error subjectError">
-						Please enter a valid password (min 16 characters)
+						(Should be more than 15 characters long)
 					</p>
 
 					<label for="text">Message</label>
@@ -73,7 +68,7 @@
 						rows="10"
 					></textarea>
 					<p class="error messageError">
-						Please enter a valid password (min 26 characters)
+						(Should be more than 25 characters long)
 					</p>
 
 					<button class="submit__btn" id="submit">Submit</button>
