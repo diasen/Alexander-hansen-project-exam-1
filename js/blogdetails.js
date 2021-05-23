@@ -34,8 +34,17 @@ async function getBlog() {
 
 getBlog();
 
-window.onclick = function (event) {
-	if (event.target == modal) {
-		modal.style.display = 'none';
-	}
+const imgModal = document.querySelectorAll('.wp-block-image');
+const imgOverlay = document.querySelector('.overlay__div');
+console.log(imgModal);
+imgModal.forEach((element) => {
+	element.onclick = function () {
+		console.log('6');
+		imgOverlay.style.display = 'block';
+		imgOverlay.innerHTML = `<img src="${element.src}" />`;
+	};
+});
+
+imgOverlay.onclick = function () {
+	imgOverlay.style.display = 'none';
 };
