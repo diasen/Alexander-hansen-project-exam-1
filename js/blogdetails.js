@@ -19,7 +19,9 @@ async function getBlog() {
 		document.querySelector('.return__btn--container').innerHTML += `<form >
         <input id="return__btn" type="button" value="Return" onclick="history.back()">
        </form>`;
-		document.querySelector('p').innerHTML = `${jsonResults.content.rendered}`;
+		document.querySelector(
+			'.blogs'
+		).innerHTML = `${jsonResults.content.rendered}`;
 	} catch (error) {
 		document.querySelector('.alert').innerHTML += showAlertTouser(
 			'An error occured',
@@ -31,3 +33,9 @@ async function getBlog() {
 }
 
 getBlog();
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = 'none';
+	}
+};
