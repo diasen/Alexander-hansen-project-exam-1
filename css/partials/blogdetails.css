@@ -101,7 +101,7 @@ a.homeBtn {
 }
 
 /* Modal Content (image) */
-.modal-content {
+.overlay__div img {
 	margin: auto;
 	display: block;
 	width: 80%;

@@ -5,6 +5,22 @@ const params = new URLSearchParams(queryString);
 console.log(params);
 
 const getId = params.get('id');
+function setupModal() {
+	const imgModal = document.querySelectorAll('img');
+	const imgOverlay = document.querySelector('.overlay__div');
+	console.log(imgModal);
+	imgModal.forEach((element) => {
+		element.onclick = function () {
+			console.log('6');
+			imgOverlay.style.display = 'block';
+			imgOverlay.innerHTML = `<img src="${element.src}" />`;
+		};
+	});
+
+	imgOverlay.onclick = function () {
+		imgOverlay.style.display = 'none';
+	};
+}
 
 async function getBlog() {
 	try {
@@ -30,21 +46,7 @@ async function getBlog() {
 	} finally {
 		document.querySelector('.loading').classList.add('hide');
 	}
+	setupModal();
 }
 
 getBlog();
-
-const imgModal = document.querySelectorAll('.wp-block-image');
-const imgOverlay = document.querySelector('.overlay__div');
-console.log(imgModal);
-imgModal.forEach((element) => {
-	element.onclick = function () {
-		console.log('6');
-		imgOverlay.style.display = 'block';
-		imgOverlay.innerHTML = `<img src="${element.src}" />`;
-	};
-});
-
-imgOverlay.onclick = function () {
-	imgOverlay.style.display = 'none';
-};
