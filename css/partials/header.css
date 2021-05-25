@@ -17,7 +17,6 @@ nav {
 	width: 80%;
 	height: 100px;
 	margin: 0 auto 0 auto;
-	border-bottom: 4px solid var(--main-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -40,6 +39,12 @@ li {
 	border-bottom: 3px solid var(--main-color);
 }
 
+.overline {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	border-bottom: 4px solid var(--main-color);
+}
+
 @media (max-width: 1200px) {
 }
 
@@ -53,5 +58,9 @@ li {
 
 	nav {
 		display: none;
+	}
+
+	.overline {
+		margin: 50px auto 0 auto;
 	}
 }

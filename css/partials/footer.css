@@ -105,4 +105,7 @@ h5 {
 }
 
 @media (max-width: 767px) {
+	.main__footer {
+		height: 650px;
+	}
 }
