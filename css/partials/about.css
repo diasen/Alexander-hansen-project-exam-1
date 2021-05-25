@@ -130,3 +130,12 @@ p {
 	font-family: var(--ff-subhead);
 	color: var(--main-color);
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}

@@ -39,3 +39,19 @@ li {
 .underline {
 	border-bottom: 3px solid var(--main-color);
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+	.logo a {
+		font-size: 3rem;
+	}
+
+	nav {
+		display: none;
+	}
+}

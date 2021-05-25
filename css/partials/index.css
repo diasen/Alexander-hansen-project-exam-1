@@ -36,17 +36,18 @@
 }
 
 .review__container {
-	width: 70%;
+	width: 90%;
 	margin: 100px auto 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
 .wine__review--container {
 	height: 400px;
 	min-width: 300px;
+	margin: 20px 20px 20px 20px;
 	background-image: url(/img/winereview2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -60,6 +61,7 @@
 .food__review--container {
 	height: 400px;
 	min-width: 300px;
+	margin: 20px 20px 20px 20px;
 	background-image: url(/img/foodreview.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -73,6 +75,7 @@
 .restaurant__review--container {
 	height: 400px;
 	min-width: 300px;
+	margin: 20px 20px 20px 20px;
 	background-image: url(/img/restaurantreview.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -124,7 +127,7 @@
 
 .blog__review--textfield {
 	width: 40%;
-	height: 250px;
+
 	background-color: var(--main-color);
 	display: flex;
 	flex-direction: column;
@@ -132,7 +135,7 @@
 	align-items: center;
 	color: white;
 	border: yellow 3px solid;
-	margin: 200px 200px 40px 30px;
+	margin: 300px 200px 40px 30px;
 }
 
 .blog__review--text {
@@ -155,8 +158,8 @@
 }
 
 .review__btn {
-	width: 300px;
-	height: 60px;
+	width: 80%;
+
 	margin: 40px auto;
 	background-color: #4d1325;
 	font-size: 1.2rem;
@@ -237,4 +240,20 @@
 .content h2 {
 	color: var(--main-color);
 	text-align: center;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+	.main__heading {
+		font-size: 2rem;
+	}
+
+	.introduction__container {
+		width: 80%;
+	}
 }
