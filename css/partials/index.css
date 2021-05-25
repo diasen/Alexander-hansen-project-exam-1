@@ -162,7 +162,7 @@
 
 .review__btn {
 	width: 40%;
-	height: 10%;
+
 	padding: 10px;
 	text-align: center;
 	margin: 0;
@@ -254,14 +254,14 @@
 }
 
 @media (max-width: 1200px) {
+	.review__btn {
+		width: 45%;
+	}
 }
 
 @media (max-width: 991px) {
 	.blog__review--container {
 		width: 80%;
-	}
-	.review__btn {
-		width: 55%;
 	}
 }
 
@@ -280,5 +280,10 @@
 
 	.blog__review--textfield {
 		height: 25%;
+	}
+
+	.profile__img {
+		width: 250px;
+		height: 250px;
 	}
 }
