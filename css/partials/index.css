@@ -109,11 +109,15 @@
 .blog__review--container {
 	height: 550px;
 	width: 60%;
+	border-radius: 5px;
 	margin: 100px auto 0 auto;
 	display: flex;
 	background-image: url(/img/mainblog.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .blog__review--img {
@@ -126,22 +130,20 @@
 }
 
 .blog__review--textfield {
-	width: 40%;
-
+	width: 100%;
+	height: 20%;
+	border-radius: 5px 5px 0 0;
 	background-color: var(--main-color);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: white;
-	border: yellow 3px solid;
-	margin: 300px 200px 40px 30px;
 }
 
 .blog__review--text {
 	text-align: center;
 	width: 100%;
-	margin-top: 90px;
 }
 
 .blog__review--text h4 {
@@ -154,18 +156,23 @@
 	font-size: var(--ff-text);
 	font-family: var(--ff-text);
 	font-weight: bold;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 .review__btn {
-	width: 80%;
-
-	margin: 40px auto;
+	width: 40%;
+	margin: 0;
 	background-color: #4d1325;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	border-radius: 5px;
 	border: none;
 	color: white;
+	margin: 0 auto 20px;
+}
+
+.review__btn:hover {
+	border: 3px solid white;
+	transition-duration: 0.5s;
 }
 
 .review__btn a {
@@ -246,6 +253,12 @@
 }
 
 @media (max-width: 991px) {
+	.blog__review--container {
+		width: 80%;
+	}
+	.review__btn {
+		width: 55%;
+	}
 }
 
 @media (max-width: 767px) {
@@ -255,5 +268,13 @@
 
 	.introduction__container {
 		width: 80%;
+	}
+
+	.review__btn {
+		width: 65%;
+	}
+
+	.blog__review--textfield {
+		height: 25%;
 	}
 }
