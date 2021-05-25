@@ -1,6 +1,5 @@
 .about__container {
-	height: 650px;
-	width: 60%;
+	width: 70%;
 	margin: 80px auto 0 auto;
 	display: flex;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -16,7 +15,7 @@
 
 .person__img {
 	height: 100%;
-	width: 100%;
+	width: 500px;
 }
 
 .textfield h1 {
@@ -24,6 +23,7 @@
 	margin: 0;
 	font-size: 2rem;
 	font-family: var(--ff-header);
+	color: var(--main-color);
 }
 
 .person__info--container {
@@ -52,9 +52,9 @@ p {
 }
 
 .prehistory__container {
-	height: 700px;
-	width: 60%;
+	width: 65%;
 	margin: 100px auto 100px auto;
+	background-color: #f6f2f2;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
 		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
 		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
@@ -132,10 +132,69 @@ p {
 }
 
 @media (max-width: 1200px) {
+	.about__container {
+		width: 80%;
+	}
+
+	.prehistory__container {
+		width: 80%;
+	}
+
+	.dog__img--box,
+	.childhood__img--box {
+		width: 60%;
+	}
 }
 
 @media (max-width: 991px) {
+	.about__container {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.person__img--container {
+		width: 100%;
+		border: none;
+	}
+
+	.person__img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.person__info--container {
+		width: 100%;
+	}
+
+	.prehistory__container {
+		width: 60%;
+	}
+
+	.dog__container,
+	.childhood__container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.dog__img--box,
+	.childhood__img--box {
+		width: 100%;
+	}
+
+	.dog__text--box,
+	.childghood__text--box {
+		width: 100%;
+	}
 }
 
 @media (max-width: 767px) {
+	.about__container {
+		width: 80%;
+	}
+
+	.prehistory__container {
+		width: 75%;
+	}
 }

@@ -162,7 +162,6 @@
 
 .review__btn {
 	width: 40%;
-
 	padding: 10px;
 	text-align: center;
 	margin: 0;
@@ -170,7 +169,7 @@
 	font-size: 1rem;
 	border-radius: 5px;
 	color: white;
-	margin: 0 auto 20px;
+	margin: 0 auto 40px;
 	font-family: var(--ff-subhead);
 }
 
