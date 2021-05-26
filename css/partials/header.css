@@ -1,15 +1,15 @@
 .logo {
 	width: 100%;
 	text-align: center;
-	margin-top: 30px;
+	margin: 30px 0 30px 0;
 }
 
 .logo a {
 	color: var(--main-color);
 	font-family: var(--ff-logo);
-	font-size: 4.2rem;
+	font-size: 5rem;
 	letter-spacing: 3px;
-	padding: 20px;
+
 	text-decoration: none;
 }
 
@@ -86,8 +86,8 @@ a {
 }
 
 .nav-link {
-	font-size: 1.6rem;
-	font-weight: 400;
+	font-size: 1.4rem;
+	font-weight: 500;
 	color: var(--main-color);
 }
 

@@ -39,7 +39,6 @@ h5 {
 .subscribe__form {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
 	margin: 10px auto 0 auto;
 }
 
@@ -101,6 +100,16 @@ h5 {
 	.social__container {
 		width: 100%;
 		margin: 0;
+	}
+
+	.email__input {
+		width: 50%;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		margin: 10px auto 0 auto;
 	}
 }
 
