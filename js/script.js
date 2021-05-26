@@ -5,7 +5,7 @@ function reinitSlickBlogs() {
 		dots: true,
 		infinite: true,
 		centerMode: true,
-		slidesToShow: 3,
+		slidesToShow: 2,
 		slidesToScroll: 3,
 	});
 }
