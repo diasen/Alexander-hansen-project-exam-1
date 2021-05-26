@@ -6,19 +6,18 @@ console.log(params);
 
 const getId = params.get('id');
 function setupModal() {
-	const imgModal = document.querySelectorAll('img');
-	const imgOverlay = document.querySelector('.overlay__div');
-	console.log(imgModal);
-	imgModal.forEach((element) => {
+	const blogModalImg = document.querySelectorAll('img');
+	const overlay = document.querySelector('.overlay__container');
+	console.log(blogModalImg);
+	blogModalImg.forEach((element) => {
 		element.onclick = function () {
-			console.log('6');
-			imgOverlay.style.display = 'block';
-			imgOverlay.innerHTML = `<img src="${element.src}" />`;
+			overlay.style.display = 'block';
+			overlay.innerHTML = `<img src="${element.src}" />`;
 		};
 	});
 
-	imgOverlay.onclick = function () {
-		imgOverlay.style.display = 'none';
+	overlay.onclick = function () {
+		overlay.style.display = 'none';
 	};
 }
 

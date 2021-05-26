@@ -86,7 +86,7 @@ a.homeBtn {
 }
 
 /* The Modal (background) */
-.overlay__div {
+.overlay__container {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
@@ -101,7 +101,7 @@ a.homeBtn {
 }
 
 /* Modal Content (image) */
-.overlay__div img {
+.overlay__container img {
 	margin: auto;
 	display: block;
 	width: 80%;
