@@ -7,13 +7,13 @@
 .logo a {
 	color: var(--main-color);
 	font-family: var(--ff-logo);
-	font-size: 4.5rem;
+	font-size: 4.2rem;
 	letter-spacing: 3px;
 	padding: 20px;
 	text-decoration: none;
 }
 
-nav {
+.nav__container {
 	width: 80%;
 	height: 100px;
 	margin: 0 auto 0 auto;
@@ -22,13 +22,16 @@ nav {
 	justify-content: center;
 }
 
+.navbar {
+}
+
 li a {
 	text-decoration: none;
 	color: var(--main-color);
 	font-family: var(--ff-subhead);
 	font-size: 1.4rem;
 	font-weight: normal;
-	margin: 20px;
+	margin: 40px;
 }
 
 li {
@@ -57,10 +60,6 @@ a {
 	border-bottom: 1px solid #e2e8f0;
 }
 
-.navbar {
-	padding: 1rem 1.5rem;
-}
-
 .hamburger {
 	position: absolute;
 	display: none;
@@ -84,7 +83,6 @@ a {
 }
 
 .nav-item {
-	margin-left: 5rem;
 }
 
 .nav-link {
