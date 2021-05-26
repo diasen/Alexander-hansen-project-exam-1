@@ -98,12 +98,9 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-	.logo  {
-		margin-top: 200px;
-	}
-
 	.logo a {
 		font-size: 2.5rem;
+		margin-top: 200px;
 	}
 
 	.navigation__menu {

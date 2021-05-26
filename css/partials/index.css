@@ -285,4 +285,13 @@
 		width: 250px;
 		height: 250px;
 	}
+
+	.main__text {
+		padding: 10px;
+		text-align: center;
+		font-size: 16px;
+		font-family: var(--ff-text);
+		color: black;
+		font-weight: normal;
+	}
 }
