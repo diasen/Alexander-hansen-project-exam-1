@@ -202,56 +202,6 @@
 	color: var(--main-color);
 }
 
-.slider {
-	width: 80%;
-	margin: 100px auto;
-}
-
-.slick-slide {
-	margin: 0px 20px;
-}
-
-.slick-slide img {
-	width: 300px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-	color: green;
-}
-
-.slick-prev {
-	left: -100px;
-	top: 50px;
-}
-
-.slick-next {
-	right: -100px;
-	top: 50px;
-}
-
-.slick-slide {
-	transition: all ease-in-out 0.3s;
-	opacity: 0.2;
-}
-
-.slick-active {
-	opacity: 0.5;
-}
-
-.slick-current {
-	opacity: 1;
-}
-
-.slick-dots {
-	bottom: -50px;
-}
-
-.content h2 {
-	color: var(--main-color);
-	text-align: center;
-}
-
 @media (max-width: 1200px) {
 	.review__btn {
 		width: 45%;

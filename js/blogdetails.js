@@ -29,7 +29,6 @@ async function getBlog() {
 		);
 		const jsonResults = await response.json();
 		console.log(jsonResults.title.rendered);
-
 		document.title = jsonResults.title.rendered;
 		document.querySelector('.return__btn--container').innerHTML += `<form >
         <input id="return__btn" type="button" value="Return" onclick="history.back()">

@@ -4,15 +4,28 @@ function reinitSlickBlogs() {
 	$('.blogs').slick({
 		dots: true,
 		infinite: true,
-		centerMode: true,
 		slidesToShow: 3,
 		slidesToScroll: 3,
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				},
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	});
 }
 
-async function getPost(id) {
-	console.log(id);
-	console.log(id_map[id]);
+async function getPost() {
 	try {
 		const response = await fetch(
 			'https://api.alexdevelops.online/wp-json/wp/v2/posts/' + id_map[id]
@@ -41,16 +54,17 @@ async function getPosts() {
 		let i = 0;
 		postArray.forEach(function (value) {
 			id_map[i++] = value.id;
-			console.log(value.id);
 			if (
 				value.better_featured_image.media_details.sizes.thumbnail.source_url
 			) {
 				document.querySelector('#blogs').innerHTML += `
             <div class="slide">
-                <img src="${value.better_featured_image.media_details.sizes.thumbnail.source_url}">
-                <div class="content">
-                    <h2>${value.title.rendered}</h2>
-                </div>
+				<a href="blogdetails.html?id=${value.id}">
+                	<img src="${value.better_featured_image.media_details.sizes.thumbnail.source_url}">
+                	<div class="content">
+                    	<h2>${value.title.rendered}</h2>
+					</div>
+				</a>
             </div>
             `;
 			} else {

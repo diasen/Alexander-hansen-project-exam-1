@@ -199,5 +199,10 @@ p {
 	}
 
 	.person__img--container {
+		min-height: 400px;
+	}
+
+	.person__img {
+		min-height: 400px;
 	}
 }
