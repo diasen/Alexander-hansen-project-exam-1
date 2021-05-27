@@ -152,4 +152,8 @@ a {
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
+
+	.logo {
+		margin: 70px 0 30px 0;
+	}
 }

@@ -46,6 +46,9 @@ h5 {
 	height: 40px;
 	width: 80%;
 	margin: 0 auto 0 auto;
+	font-size: 18px;
+	padding-left: 10px;
+	font-family: var(--ff-text);
 }
 
 .subscribe__btn {
@@ -106,7 +109,7 @@ h5 {
 		width: 50%;
 	}
 
-	form {
+	.subscribe__container form {
 		display: flex;
 		flex-direction: column;
 		margin: 10px auto 0 auto;

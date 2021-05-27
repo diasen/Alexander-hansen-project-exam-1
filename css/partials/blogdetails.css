@@ -107,3 +107,34 @@ a.homeBtn {
 	width: 80%;
 	max-width: 700px;
 }
+
+@media (max-width: 1250px) {
+	.blog__details--container img {
+		height: 500px;
+	}
+}
+
+@media (max-width: 991px) {
+	.return__btn--container {
+		text-align: right;
+	}
+
+	.blog__details--container img {
+		height: 400px;
+	}
+}
+
+@media (max-width: 767px) {
+	.blog__details--container img {
+		height: 300px;
+		min-width: 250px;
+	}
+
+	strong {
+		font-size: 2rem;
+	}
+
+	.blog__details--container h4 {
+		font-size: 1.2rem;
+	}
+}
