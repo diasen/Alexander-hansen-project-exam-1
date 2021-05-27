@@ -190,7 +190,7 @@
 
 .carosuel__container {
 	width: 80%;
-	height: 400px;
+	height: 500px;
 	margin: 40px auto 100px auto;
 }
 
@@ -266,7 +266,9 @@
 
 @media (max-width: 767px) {
 	.main__heading {
-		font-size: 2rem;
+		font-size: 1.8rem;
+		padding: 40px;
+		margin: 0;
 	}
 
 	.introduction__container {
@@ -293,5 +295,10 @@
 		font-family: var(--ff-text);
 		color: black;
 		font-weight: normal;
+	}
+
+	.review__container,
+	.blog__review--container {
+		margin: 50px auto 0 auto;
 	}
 }

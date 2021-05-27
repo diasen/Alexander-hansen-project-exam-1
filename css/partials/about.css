@@ -9,13 +9,14 @@
 }
 
 .person__img--container {
-	width: 50%;
+	width: 60%;
+	height: 600px;
 	border: none;
 }
 
 .person__img {
 	height: 100%;
-	width: 100%;
+	width: 500px;
 }
 
 .textfield h1 {
@@ -27,7 +28,6 @@
 }
 
 .person__info--container {
-	width: 50%;
 	border: none;
 	background-color: #f6f2f2;
 }
@@ -196,5 +196,8 @@ p {
 
 	.prehistory__container {
 		width: 75%;
+	}
+
+	.person__img--container {
 	}
 }

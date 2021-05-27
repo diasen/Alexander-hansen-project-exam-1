@@ -1,11 +1,11 @@
-var id_map = [];
+const id_map = [];
 
 function reinitSlickBlogs() {
 	$('.blogs').slick({
 		dots: true,
 		infinite: true,
 		centerMode: true,
-		slidesToShow: 2,
+		slidesToShow: 3,
 		slidesToScroll: 3,
 	});
 }
@@ -23,12 +23,10 @@ async function getPost(id) {
 			jsonResults.content.rendered;
 		reinitSlickBlogs();
 	} catch (error) {
-		//document.querySelector('.alert').innerHTML += showAlertTouser(
-		//    'An error occured',
-		//    'danger'
-		//);
-	} finally {
-		//document.querySelector('.section.loading').classList.add('hide');
+		document.querySelector('.alert').innerHTML += showAlertTouser(
+			'An error occured',
+			'danger'
+		);
 	}
 }
 
@@ -65,16 +63,15 @@ async function getPosts() {
             `;
 			}
 		});
+
 		// Initialize blogpost section with the latest(0) entry
 		getPost(0);
 		reinitSlickBlogs();
 	} catch (error) {
-		//document.querySelector('.alert').innerHTML += showAlertTouser(
-		//    'An error occured',
-		//    'danger'
-		//);
-	} finally {
-		//document.querySelector('.section.loading').classList.add('hide');
+		document.querySelector('.alert').innerHTML += showAlertTouser(
+			'An error occured',
+			'danger'
+		);
 	}
 }
 
