@@ -85,12 +85,11 @@ a.homeBtn {
 	color: var(--main-color);
 }
 
-/* The Modal (background) */
 .overlay__container {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
+	padding-top: 10px;
 	left: 0;
 	top: 0;
 	width: 100%; /* Full width */
@@ -100,12 +99,11 @@ a.homeBtn {
 	background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (image) */
 .overlay__container img {
-	margin: auto;
+	margin: auto auto;
 	display: block;
 	width: 80%;
-	max-width: 700px;
+	height: 100%;
 }
 
 @media (max-width: 1250px) {

@@ -43,7 +43,7 @@ async function getPost() {
 	}
 }
 
-async function getPosts() {
+async function getSliderImg() {
 	try {
 		const response = await fetch(
 			'https://api.alexdevelops.online/wp-json/wp/v2/posts'
@@ -77,8 +77,6 @@ async function getPosts() {
             `;
 			}
 		});
-
-		// Initialize blogpost section with the latest(0) entry
 		getPost(0);
 		reinitSlickBlogs();
 	} catch (error) {
@@ -89,30 +87,4 @@ async function getPosts() {
 	}
 }
 
-// Get blog posts for slider
-getPosts();
-
-$(document).on('ready', function () {
-	$('.regular').slick({
-		dots: true,
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 3,
-	});
-	$('.center').slick({
-		dots: true,
-		infinite: true,
-		centerMode: true,
-		slidesToShow: 5,
-		slidesToScroll: 3,
-	});
-	$('.lazy').slick({
-		lazyLoad: 'ondemand', // ondemand progressive anticipated
-		infinite: true,
-	});
-	// On before slide change, whenever slider is moved redraw current post selected
-	$('.blogs').on('afterChange', function (event, slick, currentSlide) {
-		console.log(currentSlide);
-		getPost(currentSlide);
-	});
-});
+getSliderImg();

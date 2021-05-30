@@ -10,13 +10,12 @@
 
 .person__img--container {
 	width: 60%;
-	height: 600px;
 	border: none;
 }
 
 .person__img {
 	height: 100%;
-	width: 500px;
+	width: 100%;
 }
 
 .textfield h1 {
@@ -28,12 +27,13 @@
 }
 
 .person__info--container {
+	width: 40%;
 	border: none;
 	background-color: #f6f2f2;
 }
 
 .textfield {
-	width: 80%;
+	width: 60%;
 	height: 90%;
 	margin: 30px auto;
 	display: flex;
@@ -143,6 +143,10 @@ p {
 	.dog__img--box,
 	.childhood__img--box {
 		width: 60%;
+	}
+
+	.person__img--container {
+		min-width: 500px;
 	}
 }
 

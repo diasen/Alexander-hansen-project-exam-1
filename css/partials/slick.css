@@ -1,3 +1,17 @@
+.carosuel__container {
+	width: 80%;
+	height: 500px;
+	margin: 40px auto 100px auto;
+}
+
+.carosuel__container h5 {
+	font-size: var(--fz-subheading);
+	font-family: var(--ff-header);
+	font-weight: normal;
+	text-align: center;
+	color: var(--main-color);
+}
+
 .slider {
 	width: 80%;
 	margin: 100px auto;
@@ -8,7 +22,8 @@
 }
 
 .slick-slide img {
-	width: 100%;
+	width: 80%;
+	margin: auto auto;
 	border-radius: 5px;
 }
 
@@ -56,5 +71,9 @@
 	.slick-slide img {
 		width: 80%;
 		margin: auto auto;
+	}
+
+	.carosuel__container {
+		margin: 40px auto 150px auto;
 	}
 }

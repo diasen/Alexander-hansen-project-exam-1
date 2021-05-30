@@ -188,20 +188,6 @@
 	font-size: 1.3rem;
 }
 
-.carosuel__container {
-	width: 80%;
-	height: 500px;
-	margin: 40px auto 100px auto;
-}
-
-.carosuel__container h5 {
-	font-size: var(--fz-subheading);
-	font-family: var(--ff-header);
-	font-weight: normal;
-	text-align: center;
-	color: var(--main-color);
-}
-
 @media (max-width: 1200px) {
 	.review__btn {
 		width: 45%;
